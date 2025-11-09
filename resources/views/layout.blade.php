@@ -25,6 +25,12 @@
                 <li>
                     <a href="{{ route('contacts') }}">Contacts</a>
                 </li>
+                <li>
+                    <a href="{{ route('login') }}">Login</a>
+                </li>
+                <li>
+                    <a href="{{ route('signup') }}">Sign Up</a>
+                </li>
             </ul>
         </nav>
 

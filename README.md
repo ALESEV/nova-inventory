@@ -20,3 +20,11 @@ php artisan migrate
 docker exec -it inventory_management_system bash
 
 npm install tailwindcss @tailwindcss/vite
+
+php artisan make:migration create_(name)_table 
+php artisan migrate 
+php artisan migrate:refresh (recreated all db)
+
+php artisan make:model Category 
+
+php artisan make:controller MainController
