@@ -10,31 +10,39 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <header>
-        <img src="{{ asset('storage/logo.png') }}" alt="Logo Nova Inventory">
-        <h1>Nova Inventory</h1>
+    <header class="bg-red-500">
+        <div class="container mx-auto flex justify-between items-center py-5">
+            
+            <div class="flex items-center">
+                <img class="w-10" src="{{ asset('storage/logo.png') }}" alt="Logo Nova Inventory">
+                <h1 class="text-white">Nova Inventory</h1>                
+            </div>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="{{ route('home') }}">Home</a>
-                </li>
-                <li>
-                    <a href="{{ route('about') }}">About</a>
-                </li>
-                <li>
-                    <a href="{{ route('contacts') }}">Contacts</a>
-                </li>
-                <li>
-                    <a href="{{ route('login') }}">Login</a>
-                </li>
-                <li>
-                    <a href="{{ route('signup') }}">Sign Up</a>
-                </li>
-            </ul>
-        </nav>
+
+            <nav>
+                <ul class="flex justify-between gap-3">
+                    <li>
+                        <a href="{{ route('home') }}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('about') }}">About</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('contacts') }}">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('login') }}">Login</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('signup') }}">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
+
+
 
     <main>
         @yield("main")
