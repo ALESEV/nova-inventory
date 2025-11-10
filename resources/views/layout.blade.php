@@ -13,17 +13,13 @@
     <header class="bg-red-500">
         <div class="container mx-auto flex justify-between items-center py-5">
             
-            <div class="flex items-center">
+            <a class="flex items-center" href="{{ route('home') }}">
                 <img class="w-10" src="{{ asset('storage/logo.png') }}" alt="Logo Nova Inventory">
                 <h1 class="text-white">Nova Inventory</h1>                
-            </div>
-
+            </a>
 
             <nav>
                 <ul class="flex justify-between gap-3">
-                    <li>
-                        <a href="{{ route('home') }}">Home</a>
-                    </li>
                     <li>
                         <a href="{{ route('about') }}">About</a>
                     </li>
