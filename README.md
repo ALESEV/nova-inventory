@@ -35,3 +35,6 @@ php artisan make:model Category
 php artisan make:controller MainController
 
 php artisan route:list
+
+npm install lucide
+https://lucide.dev/icons/
